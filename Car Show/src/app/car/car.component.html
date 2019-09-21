@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="col-md-3 mt-4 float-left">
+        <div class="card card-body mt-2" style="background-color: palegreen" *ngFor="let car of cars">
+            <img src="{{car.img}}" alt="" style="width: 190px;height: 165px;" (click)='sendfunc(car)'>
+            <h1 class="text-center">{{car.brand}}</h1>
+            <h2 class="text-center">{{car.model}}</h2>
+            <h3 class="text-center">{{car.price}}</h3>
+        </div>
+    </div>
+    <app-car-details [carDetails]='carData'></app-car-details>
+</div>

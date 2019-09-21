@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col-md-8 mt-2 offset-2">
+        <table class="table table-hoverable table-bordered">
+            <thead style="background-color: darkblue ">
+                <th style="color: floralwhite;font-family: cursive">Index</th>
+                <th style="color: floralwhite;font-family: cursive">Task Name</th>
+                <th style="color: floralwhite;font-family: cursive">Edit</th>
+                <th style="color: floralwhite;font-family: cursive">Delete</th>
+            </thead>
+            <tbody *ngFor='let task of Tasks'>
+                <td>{{task.name}}</td>
+                <td><button class="btn btn-outline-primary">Edit</button></td>
+                <td><button class="btn btn-outline-danger">Delete</button></td>
+            </tbody>
+        </table>
+    </div>
+</div>
